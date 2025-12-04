@@ -1,73 +1,76 @@
-# React + TypeScript + Vite
+Rick and Morty React Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple React + TypeScript application built as a technical task for the Axsos bootcamp. It uses the public Rick and Morty API to display characters, search for characters by name, and view detailed information about each character.
 
-Currently, two official plugins are available:
+Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Display a list of characters
 
-## React Compiler
+Search characters by name
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Navigate to a character details page
 
-## Expanding the ESLint configuration
+Show character image, basic information, and episodes
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Use TanStack Query for data fetching
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Use React Router for navigation
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Technologies Used
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+React
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+TypeScript
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Vite
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+TanStack Query
+
+React Router DOM
+
+API
+
+This project uses data from the Rick and Morty API:
+https://rickandmortyapi.com/
+
+Project Structure
+src/
+  pages/
+    CharactersPage.tsx
+    CharacterDetailsPage.tsx
+  types/
+    types.ts
+  App.tsx
+  main.tsx
+
+Installation
+npm install
+
+Development
+
+To start the development server:
+
+npm run dev
+
+
+Then open the local URL shown in the terminal, usually:
+
+http://localhost:5173
+
+Build
+
+To create a production build:
+
+npm run build
+
+Requirements Completed
+
+Characters page with search
+
+Character details page
+
+Data fetching with TanStack Query
+
+React + TypeScript setup
+
+Clean and simple file structure
