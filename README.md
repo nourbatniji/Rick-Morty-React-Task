@@ -4,12 +4,12 @@ This project is a simple React + TypeScript application built as a technical tas
 
 ## Features
 
-- ✨ Display a list of characters
-- 🔍 Search characters by name
-- 📄 Navigate to a character details page
-- 🖼️ Show character image, basic information, and episodes
-- 🚀 Use TanStack Query for efficient data fetching
-- 🧭 Use React Router for navigation
+- Display a list of characters
+- Search characters by name
+- Navigate to a character details page
+- Show character image, basic information, and episodes
+- Use TanStack Query for efficient data fetching
+- Use React Router for navigation
 
 ## Technologies Used
 
