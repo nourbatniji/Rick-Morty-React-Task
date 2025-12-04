@@ -1,6 +1,6 @@
 # Rick and Morty React Task
 
-This project is a simple React + TypeScript application built as a technical task for the Axsos bootcamp. It uses the public Rick and Morty API to display characters, search for characters by name, and view detailed information about each character.
+This project is a simple React + TypeScript application built as a technical task. It uses the public Rick and Morty API to display characters, search for characters by name, and view detailed information about each character.
 
 ## Features
 
