@@ -26,3 +26,28 @@ https://rickandmortyapi.com/
 
 ## Project Structure
 
+src/
+pages/
+CharactersPage.tsx
+CharacterDetailsPage.tsx
+types/
+types.ts
+App.tsx
+main.tsx
+
+## Installation
+
+```bash
+npm install
+
+## **Development**
+
+npm run dev
+
+## **Requirements Completed**
+Characters page
+Search functionality
+Character details page
+TanStack Query
+React + TypeScript
+Clean project structure
